@@ -1,9 +1,9 @@
 <?php
 $catalog = array();
-$catalog[] =  "Design Patterns";
-$catalog[] =     "Forest Gump";
-$catalog[] =   "Beethoven";
-$catalog[] = "Clean Code";
+$catalog[101] =  "Design Patterns";
+$catalog[201] =     "Forest Gump";
+$catalog[301] =   "Beethoven";
+$catalog[102] = "Clean Code";
 
 
 $pageTitle = "Full Catalog";
