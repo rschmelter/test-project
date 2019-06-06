@@ -1,11 +1,12 @@
 <?php
-function getItemHtml($id, $item) {
-    $output = "<li><a href='#'><img src='"
-        . $item["img"] . "' alt='"
-        . "<p>View Description</p>"
+function getItemHtml($id,$item) {
+    $output = "<li><a href='details.php?id="
+        . $id . "'><img src='" 
+        . $item["img"] . "' alt='" 
+        . $item["title"] . "' />" 
+        . "<p>View Details</p>"
         . "</a></li>";
-
-        return $output;
+    return $output;
 }
 
 function array_category($catalog, $category) {
