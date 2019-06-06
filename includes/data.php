@@ -1,5 +1,5 @@
 <?php
-$catalog = []];
+$catalog = [];
 $catalog[101] = [
 	"title" => "A Design Patterns: Elements of Reusable Object-Oriented Software",
 	"img" => "img/media/design_patterns.jpg",
@@ -183,5 +183,3 @@ $catalog[304] = [
     "category" => "Music",
     "artist" => "Nat King Cole"
 ];
-
-?>
