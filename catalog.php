@@ -30,9 +30,11 @@ include("includes/header.php"); ?>
     <div class="wrapper">
         <h1><?php echo $pageTitle;?></h1>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <?php foreach($catalog as $item){
+               echo "<li>"  . $item . "</li>";
+            }
+            ?>
+
         </ul>
         
     </div>
