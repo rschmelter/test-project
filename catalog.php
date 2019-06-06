@@ -1,6 +1,7 @@
 <?php
 
 include("includes/data.php");
+include("includes/functions.php");
 
 $pageTitle = "Full Catalog";
 
@@ -26,12 +27,13 @@ include("includes/header.php"); ?>
     <div class="wrapper">
         <h1><?php echo $pageTitle;?></h1>
         <ul class="items">
-            <?php foreach($catalog as $item){
-              echo "<li><a href='#'><img src='"
-              . $item["img"] . "' alt='"
-              . "<p>View Description</p>"
-              . "</a></li>";
-            }
+            <?php
+
+                $categories = array_category($catalog, $section);
+
+                foreach($categories as $id) {
+                    echo getItemHtml($id, $catalog[$id]);
+                    }
             ?>
 
         </ul>
